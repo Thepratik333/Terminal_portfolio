@@ -1,0 +1,227 @@
+.box-container > div:nth-child(1) {
+    background-color: red;
+  }
+  
+  .box-container > div:nth-child(2) {
+    background-color: yellow;
+  }
+  
+  .box-container > div:nth-child(3) {
+    background-color: green;
+  }
+
+.terminalBox{
+    background-color: black;
+    width: 58vw;
+    height: 70vh;
+    border: 2px solid #1e293b;
+    scrollbar-width: none;
+    padding: 0px 15px;
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+}
+.comandForm{
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 7px 0;
+}
+
+.comandInput{
+    background: transparent;
+    width: 76%;
+    padding: 9px;
+    outline: none;
+}
+
+/* Skill.jsx --------------------------------------------*/
+
+html{
+    font-family: sans-serif;
+    color: white;
+    
+}
+body{
+    background: #303237;
+    ;
+    margin: 0;
+}
+.skills {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 55px);
+  }
+ .skl{
+     margin-left: 20px;
+     color: yellow;
+ }
+.sklLine{
+    position: relative;
+    bottom: 8px;
+    visibility: hidden;
+    padding-left: 6px;
+    color: greenyellow;
+}
+  .ProgWidth {
+    padding: 0px 20px;
+  }
+  .skillDiv {
+    height: 5px;
+    width: 100%;
+    background-color: gray;
+  }
+  .skillBar {
+    display: block;
+    height: 5px;
+    background-color: rgb(26, 204, 19);
+  }
+  .p {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .htmlBar {
+    width: 70%;
+    animation: html 3s 1s 1 forwards;
+  }
+  .cssBar {
+    width: 70%;
+    animation: css 3s 1s 1 forwards;
+  }
+  .jsBar {
+    width: 75%;
+    animation: js 3s 1s 1 forwards;
+  }
+  .reactBar {
+    width: 95%;
+    animation: react 3s 1s 1 forwards;
+  }
+  
+  .phpBar {
+    width: 85%;
+    animation: php 3s 1s 1 forwards;
+  }
+  .mongoDbBar {
+    width: 70%;
+    animation: mongo 3s 1s 1 forwards;
+  }
+  .nodeBar {
+    width: 55%;
+    animation: node 3s 1s 1 forwards;
+  }
+  .sqlBar {
+    width: 85%;
+    animation: sql 3s 1s 1 forwards;
+  }
+  .expressBar {
+    width: 65%;
+    animation: express 3s 1s 1 forwards;
+  }
+  .allBar {
+    width: 85%;
+    animation: allBar 3s 1s 1 forwards;
+  }
+
+  
+  
+  @keyframes html {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 95%;
+    }
+  }
+  @keyframes css {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+  }
+  @keyframes js {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 95%;
+    }
+  }
+  @keyframes php {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+  }
+  @keyframes mongo {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  @keyframes react {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 95%;
+    }
+  }
+  @keyframes node {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 55%;
+    }
+  }
+
+  @keyframes sql {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+  }
+  @keyframes express {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 65%;
+    }
+  }
+  @keyframes allBar {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+  }
+
+
+  /* Projects.`````````````````````````````````` */
+
+  .box{
+    background-color: rgb(26 33 39);
+    border: 2px solid #eab308;
+    height: 15vh;
+    width: 15vw;
+    margin-bottom: 13px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
