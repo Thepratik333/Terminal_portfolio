@@ -49,7 +49,7 @@ function Terminal() {
                    {command === "ls"? <h1  className=' text-center text-[30px]'>█▓▒▒░░░WELCOME░░░▒▒▓█</h1>: ""}
                 <form className='comandForm  flex items-center' onSubmit={handleCommand}>
                     <p>C:\Pratik&gt;{command} $~</p>
-                    <input onChange={e => setInput(e.target.value)} value={input} type="text" name='command' placeholder='try ls ...' className='comandInput' />
+                    <input onChange={e => setInput((e.target.value).toLowerCase())} value={input} type="text" name='command' placeholder='try ls ...' className='comandInput' />
                 </form>
                 {command === "ls"?<Help/>:""}
                 {command === "bio"?<Bio/>:""}
