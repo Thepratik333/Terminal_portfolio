@@ -8,6 +8,7 @@ import Bio from "./Bio"
 import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
+import Certifications from './Certifications'
 
 function Terminal() {
 
@@ -48,16 +49,17 @@ function Terminal() {
                    {command === "ls"? <h1  className=' text-center text-[30px]'>█▓▒▒░░░WELCOME░░░▒▒▓█</h1>: ""}
                 <form className='comandForm  flex items-center' onSubmit={handleCommand}>
                     <p>C:\Pratik&gt;{command} $~</p>
-                    <input onChange={e => setInput(e.target.value)} value={input} type="text" name='command' placeholder='try ls ...' className='comandInput' />
+                    <input onChange={e => setInput((e.target.value).toLowerCase())} value={input} type="text" name='command' placeholder='try ls ...' className='comandInput' />
                 </form>
                 {command === "ls"?<Help/>:""}
                 {command === "bio"?<Bio/>:""}
                 {command === "skill"?<Skills/>:""}
                 {command === "project"?<Projects/>:""}
+                {command === "certification"? <Certifications/>:""}
                 {command === "experience"?<Experience/>:""}
                 {command === "education"?<Education/>:""}
                 {command === "contact"?<Contact/>:""}
-                {["ls", "bio", "skill", "project", "experience", "education", "contact"].indexOf(command) === -1 && (
+                {["ls", "bio", "skill", "certification" ,"project", "experience", "education", "contact"].indexOf(command) === -1 && (
                     <div className="terminal bg-black text-white font-mono p-4 rounded-lg">
                         <p className="text-red-500">Command not found</p>
                     </div>
