@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       
-      <div style={{ border: "2px solid #8393ff", borderRadius: "8px" }}>
+      <div style={{ border: "2.5px solid #8393ff", borderRadius: "6px" , height: "42rem", maxWidth: "70rem"}}>
         <Terminal />
       </div>
     </>
